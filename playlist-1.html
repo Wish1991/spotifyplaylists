@@ -3,28 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mijn Favorieten Playlist</title>
+  <title>Wish’s Ultimate Playlist</title>
   <style>
-    body {background: #191414; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; margin:0;}
-    .wrapper {max-width:520px; margin:40px auto; background:#232323; border-radius:18px; box-shadow:0 6px 26px #0004; padding:28px 24px 20px 24px; text-align:center;}
-    h1 {font-size:2rem;}
-    .playlist-cover {width:120px; height:120px; border-radius:10px; box-shadow:0 2px 12px #0007; margin-bottom:12px;}
-    .playlist-link {display:block; color:#1db954; margin:8px 0 18px 0; text-decoration: none;}
-    .terug { color:#aaa; text-decoration: none; font-size:.97rem; display:block; margin-top:20px;}
+    body { background: #191414; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; margin:0;}
+    .wrapper { max-width:600px; margin:40px auto; background:#232323; border-radius:20px; box-shadow:0 6px 26px #0004; padding:34px 28px 30px 28px; text-align:center;}
+    .playlist-cover {width:122px; height:122px; border-radius:13px; box-shadow:0 2px 16px #0008; margin-bottom:14px;}
+    h1 {font-size:2.1rem; margin:0 0 6px 0;}
+    .trackcount {color:#1db954; font-size:1.06rem; margin-bottom:8px;}
+    .desc { color:#b5b5b5; font-size:1.09rem; margin-bottom:13px;}
+    .spotify-btn {display:inline-block; background: #1db954; color: #fff; text-decoration: none; font-size:1.11rem; padding:10px 32px; border-radius: 9px; margin:18px 0 16px 0; font-weight:600; box-shadow:0 3px 16px #183e20a6;}
+    .spotify-btn:hover {background:#21ed6e;}
+    iframe {border-radius:13px; box-shadow:0 3px 14px #0005; margin-top:18px;}
+    .tip {color:#b5b5b5; font-size:.98rem; margin:10px 0 0 0;}
+    .tracks-preview {
+      background:#202020; border-radius:12px; max-height:230px; overflow-y:auto;
+      margin:22px 0 0 0; text-align:left; box-shadow:0 2px 12px #0005; padding: 14px 12px 12px 18px;
+    }
+    .tracks-preview h2 { color: #1db954; font-size:1.09rem; margin:0 0 7px 0; letter-spacing:.5px;}
+    .tracks-preview ol {margin:0; padding-left:18px; font-size:.98rem;}
+    .tracks-preview li {margin:0 0 3px 0; color:#eee;}
+    .terug { color:#aaa; text-decoration: none; font-size:.97rem; display:inline-block; margin:28px 0 0 0;}
     .terug:hover { color: #1db954; }
-    .desc { color:#bbb; font-size:1.01rem; margin-bottom:15px; }
-    iframe {border-radius:12px; box-shadow:0 3px 14px #0005;}
-    @media (max-width:650px) {.wrapper{max-width:99vw;}}
+    @media (max-width:700px) {.wrapper{max-width:98vw;}}
   </style>
 </head>
 <body>
 <div class="wrapper">
-  <img class="playlist-cover" src="https://misc.scdn.co/liked-songs/liked-songs-640.png" alt="Mijn Favorieten">
-  <h1>Mijn Favorieten</h1>
-  <div class="desc">Geniet van een selectie van mijn favoriete tracks. Je kunt deze playlist rechtstreeks hier beluisteren, of openen in Spotify voor meer functies!</div>
-  <a class="playlist-link" href="https://open.spotify.com/playlist/3219EGbH7YeMrhYGkQjEEU" target="_blank">Open playlist in Spotify</a>
-  <!-- Jouw Spotify embed hieronder: -->
+  <img class="playlist-cover" src="https://misc.scdn.co/liked-songs/liked-songs-640.png" alt="Wish’s Ultimate Playlist">
+  <h1>Wish’s Ultimate Playlist</h1>
+  <div class="trackcount">122 nummers • Non-stop vibes</div>
+  <div class="desc">
+    Laat je meevoeren door mijn persoonlijke selectie van favoriete tracks.  
+    Van classics tot nieuwe ontdekkingen: deze lijst is perfect voor elke mood, of je nu wilt chillen, werken of een feestje bouwt.<br>
+    <span style="color:#1db954;font-weight:500;">Shuffle aanbevolen!</span>
+  </div>
+  <a class="spotify-btn" href="https://open.spotify.com/playlist/3219EGbH7YeMrhYGkQjEEU" target="_blank">
+    ▶️ Speel af in Spotify
+  </a>
   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3219EGbH7YeMrhYGkQjEEU?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <div class="tip">Tip: Zet shuffle aan om elke keer nieuwe nummers te ontdekken!</div>
+  <div class="tracks-preview">
+    <h2>Preview van alle nummers:</h2>
+    <ol>
+      <li>VOY A LLeVARTE PA PR – Bad Bunny</li>
+      <li>Her World (feat. Jorja Smith) – Skiifall, Jorja Smith</li>
+      <li>Sugarcane – Kish</li>
+      <!--
+        Voeg hieronder ALLE andere tracks toe (copy-paste Spotify tracklist naar <li>... – ...</li>)
+        Dit is handwerk tenzij je het via API doet!
+      -->
+      <!--
+      <li>Track 4 – Artiest</li>
+      <li>Track 5 – Artiest</li>
+      ... etc ...
+      <li>Track 122 – Artiest</li>
+      -->
+    </ol>
+  </div>
   <a href="index.html" class="terug">&larr; Terug naar overzicht</a>
 </div>
 </body>
