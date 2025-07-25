@@ -29,7 +29,7 @@
     .playlists { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center;}
     .playlist-card { background:#232323; border-radius:16px; padding:24px 18px 18px 18px; box-shadow: 0 4px 22px #0005; width:260px; text-align:center; cursor:pointer; transition:transform .14s;}
     .playlist-card:hover { transform:scale(1.045);}
-    .playlist-cover {width:136px; height:136px; border-radius: 11px; box-shadow:0 2px 10px #0007;}
+    .playlist-cover {width:136px; height:136px; border-radius: 11px; box-shadow:0 2px 10px #0007; object-fit:cover;}
     .playlist-title {margin-top:14px; font-size:1.18rem; font-weight:600;}
     .playlist-desc {margin:10px 0 15px 0; color:#bbb; font-size:.98rem;}
     .playlist-link {display:inline-block; background: #1db954; color: #fff; text-decoration: none; font-size:1.04rem; padding:7px 22px; border-radius: 8px; margin-top:6px; font-weight:500;}
@@ -42,18 +42,17 @@
     <h1>Mijn Spotify Playlists</h1>
     <div class="uitleg">
       Welkom bij mijn persoonlijke muziekverzameling! 🎧<br>
-      Hier vind je playlists in verschillende genres waar ik graag naar luister. Of je nu houdt van opzwepende Hip-Hop, zomerse Afrobeats, ritmische Dancehall, relaxte Latin vibes of fijne R&B – er is voor ieder wat wils.<br>
-      Klik op een playlist om direct te luisteren en ontdek muziek die bij jouw mood past.<br>
+      Hier vind je playlists in verschillende genres waar ik graag naar luister. Dit platform groeit steeds verder!<br>
       <span class="genres">Genres: Hip-Hop • R&B • Afrobeats • Dancehall • Latin</span>
     </div>
     <div class="playlists">
-      <div class="playlist-card" onclick="window.location='playlist-1.html'">
-        <img class="playlist-cover" src="https://misc.scdn.co/liked-songs/liked-songs-640.png" alt="Mijn Playlist">
-        <div class="playlist-title">Mijn Favorieten</div>
-        <div class="playlist-desc">Een selectie van mijn favoriete nummers. Luister direct mee via Spotify!</div>
-        <a class="playlist-link" href="playlist-1.html">Openen</a>
+      <div class="playlist-card" onclick="window.location='wnb-top-10-bangers-2025.html'">
+        <img class="playlist-cover" src="wnb-top-10-bangers-2025.png" alt="WNB Top 10 Bangers 2025">
+        <div class="playlist-title">🚀 WNB - Top 10 Bangers 2025</div>
+        <div class="playlist-desc">De allerheetste 10 tracks van 2025, handpicked door Wish. Perfect voor de zomer, jouw volgende feestje of als je gewoon zin hebt in nieuwe bangers. <br>Genres: Hip-Hop, Afrobeats, Latin & meer!</div>
+        <a class="playlist-link" href="wnb-top-10-bangers-2025.html">Bekijk playlist</a>
       </div>
-      <!-- Meer playlist-cards komen hier straks -->
+      <!-- Hier kun je later makkelijk meer playlists toevoegen! -->
     </div>
   </div>
 </body>
