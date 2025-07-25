@@ -7,7 +7,25 @@
   <style>
     body { background: #191414; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0;}
     .wrapper { max-width: 700px; margin: 48px auto; }
-    h1 { font-size: 2.3rem; text-align:center; margin-bottom: 30px; letter-spacing:.5px;}
+    h1 { font-size: 2.3rem; text-align:center; margin-bottom: 16px; letter-spacing:.5px;}
+    .uitleg {
+      background: #232323;
+      border-radius: 14px;
+      padding: 18px 24px 14px 24px;
+      margin-bottom: 36px;
+      font-size: 1.09rem;
+      color: #ddd;
+      box-shadow: 0 2px 16px #0004;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .genres {
+      margin-top: 8px;
+      margin-bottom: 0;
+      font-size: 1.04rem;
+      color: #1db954;
+      font-weight: bold;
+    }
     .playlists { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center;}
     .playlist-card { background:#232323; border-radius:16px; padding:24px 18px 18px 18px; box-shadow: 0 4px 22px #0005; width:260px; text-align:center; cursor:pointer; transition:transform .14s;}
     .playlist-card:hover { transform:scale(1.045);}
@@ -22,6 +40,12 @@
 <body>
   <div class="wrapper">
     <h1>Mijn Spotify Playlists</h1>
+    <div class="uitleg">
+      Welkom bij mijn persoonlijke muziekverzameling! 🎧<br>
+      Hier vind je playlists in verschillende genres waar ik graag naar luister. Of je nu houdt van opzwepende Hip-Hop, zomerse Afrobeats, ritmische Dancehall, relaxte Latin vibes of fijne R&B – er is voor ieder wat wils.<br>
+      Klik op een playlist om direct te luisteren en ontdek muziek die bij jouw mood past.<br>
+      <span class="genres">Genres: Hip-Hop • R&B • Afrobeats • Dancehall • Latin</span>
+    </div>
     <div class="playlists">
       <div class="playlist-card" onclick="window.location='playlist-1.html'">
         <img class="playlist-cover" src="https://misc.scdn.co/liked-songs/liked-songs-640.png" alt="Mijn Playlist">
@@ -29,6 +53,7 @@
         <div class="playlist-desc">Een selectie van mijn favoriete nummers. Luister direct mee via Spotify!</div>
         <a class="playlist-link" href="playlist-1.html">Openen</a>
       </div>
+      <!-- Meer playlist-cards komen hier straks -->
     </div>
   </div>
 </body>
